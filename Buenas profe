@@ -1,0 +1,6 @@
+Perdone, me olvide de mencionar en el pdf que para que el proyecto arranque debe ingresar en la consola de vscode los comandos:
+npm i
+y luego 
+npm run dev
+una vez que arranque le va indicar que el servidor esta en puerto 3000 de localhost
+la base de datos esta agregada en la carpeta db.
