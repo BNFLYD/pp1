@@ -1,0 +1,80 @@
+
+/* cuerpo de las calculadoras */
+*{
+    font-family: 'Oswald' , sans-serif;
+    font-size: 107%;
+}
+body{
+    box-sizing: border-box;
+}
+.index{
+    width: 100vw;
+    height: 100vh;
+}
+.fondo{
+    color: #fff;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    background: url('/img/bg.png');
+}
+
+.contenedor {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cuerpo{
+    display: flex;
+    width: 360px;
+    height: 500px;
+    flex-direction: column;
+    border: 1px solid #000;
+    background: #000;
+    }
+.pantalla {
+    font-size: 170%;
+    padding: 2px 2px 0 0;
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    background: #000;
+    text-align: right;
+    border: solid #000;
+    overflow: auto;
+}
+.keypad{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.boton{
+    width: 25%;
+    text-align: center;
+    padding: 20px 0 0 0;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 44%;
+    cursor: pointer;
+}
+.boton.az{
+    background: #2d81ff;
+    color: #000;
+}
+.boton.num{
+    background: #b9b9b9;
+    color: #000;
+}
+.boton:hover{
+    filter: brightness(80%);
+    transition: filter .2s;
+}

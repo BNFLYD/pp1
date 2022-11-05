@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <img src="/img/calculadora.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top bg-primary">
+    <div class="ml-90">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Info
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/flavio-gabriel-morales-939371184/">Acerca de mi</a></li>
+            <li><a class="dropdown-item" href="https://github.com/BNFLYD/ProyectoPP1.git">Repositorio del proyecto</a></li>
+          </ul>
+        </li>
+        {{#if user}}
+        <li class="nav-item">
+          <a class="nav-link">{{user.username}}</a>
+        </li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">logout</a>
+        </li>
+        {{else}}
+        <a>&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        {{/if}}
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
